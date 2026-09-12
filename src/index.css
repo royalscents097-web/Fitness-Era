@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-near-black: #07090C;
+    --bg-deep-black: #0B0D10;
+    --bg-charcoal: #11151A;
+    --bg-graphite: #171C22;
+    --border-gray: #2A3038;
+    --text-muted: #9AA3AD;
+    --text-white: #F5F7FA;
+    --accent-blue: #2563EB;
+    --accent-cyan: #06B6D4;
+    --accent-violet: #6D28D9;
+  }
+
+  body {
+    background-color: var(--bg-near-black);
+    color: var(--text-white);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Subtle architectural grid lines */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(42, 48, 56, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 48, 56, 0.15) 1px, transparent 1px);
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(37, 99, 235, 0.35);
+}
+
+.glow-blue-sm {
+  box-shadow: 0 0 15px -3px rgba(37, 99, 235, 0.25);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090C;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A3038;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B424C;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Fitness Era Barkat Market Garden Town",
+  "description": "Fitness Era Barkat Market Garden Town is a modern fitness center in Garden Town, Lahore. Train for strength, fitness, consistency and progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
